@@ -90,11 +90,11 @@
         </div>
         <!-- /page one -->
         <!-- Start of second page: #searchlist -->
-        <div data-role="page" id="searchlist" data-theme="c"><p>
+        <div data-role="page" id="searchlist" data-theme="b">
             <div data-role="header" data-position="fixed" data-add-back-btn="true">
                 	<h1>Search Results</h1>
             </div>
-            <div data-role="content" data-theme="b">
+            <div data-role="content" data-theme="a">
                 <ul data-role="listview">
                     <li data-role="list-divider">Restaurants Near You
                         <div class="ui-li-count">158</div>
@@ -121,6 +121,30 @@
                 <li> <a href="#dealdetail">
                 <h3>Hogg's Breath Cafe</h3>
                 <p>$ Things made of pigs. Burleigh Heads.<br>
+                <p class="ui-li-aside">3 Star</p>
+                </a></li>
+                
+                <li> <a href="#dealdetail">
+                <h3>Downstairs Cafe</h3>
+                <p>$ Things made of meat. Perth.<br>
+                <p class="ui-li-aside">3 Star</p>
+                </a></li>
+
+                <li> <a href="#dealdetail">
+                <h3>Downstairs Cafe</h3>
+                <p>$ Things made of meat. Perth.<br>
+                <p class="ui-li-aside">3 Star</p>
+                </a></li>
+
+                <li> <a href="#dealdetail">
+                <h3>Downstairs Cafe</h3>
+                <p>$ Things made of meat. Perth.<br>
+                <p class="ui-li-aside">3 Star</p>
+                </a></li>
+
+                <li> <a href="#dealdetail">
+                <h3>Downstairs Cafe</h3>
+                <p>$ Things made of meat. Perth.<br>
                 <p class="ui-li-aside">3 Star</p>
                 </a></li>
                 
@@ -269,15 +293,14 @@
             </div>
             <!-- /header -->
             <div data-role="content" data-theme="a" align="center">
-                Name: Manuel Baleato<br>
-                Job Title: PhoneGap Failer<p>
-                <img src = "images/exampleimages/imgNobody.png" width=25%" id = "myImage"><p>
+            Name: Steve Gregory<br>
+            Job Title: PhoneGap Lecturer<p>
+            <img src = "images/exampleimages/imgNobody.png" width="25%" id = "myImage"><p>
 			</div>
 
-            <button onclick="TakePhotoUsingCamera();">Take Photo Using Camera</button>
+            <button onclick="TakePhotoUsingCamera();">Take Photo using Camera</button>
+
             <button onclick="TakePhotoFromLibrary();">Take Photo from Library</button>
-            
-            
             
             <!-- /content -->
             <div data-role="footer" data-position="fixed" data-id="f1">
@@ -296,6 +319,65 @@
                 <!-- /navbar -->
             </div>
             <!-- /footer -->
+        </div>
+
+       <!-- More Page -->
+           <div data-role="page" id="more" data-theme="b">
+            <div data-role="header" data-position="fixed" data-add-back-btn="false">
+                    <h1>More</h1>
+            </div>
+            <!-- /header -->
+            <div data-role="content" data-theme="a" align="center">
+                <button onclick="ShowGEOLocation();">Show Location</button>
+                <button onclick="Vibrate();">Vibrate</button>
+            </div>
+
+            <!-- /content -->
+            <div data-role="footer" data-position="fixed" data-id="f1">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#search" data-icon="search">Search</a>
+                        </li>
+                        <li><a href="#myDeals" data-icon="star">My Deals</a>
+                        </li>
+                        <li><a href="#accounts" data-icon="gear">Account</a>
+                        </li>
+                        <li><a href="#more" data-icon="info">More</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /navbar -->
+            </div>
+            <!-- /footer -->
+        </div>
+
+       <!-- myDeals Page -->
+           <div data-role="page" id="myDeals" data-theme="b">
+            <div data-role="header" data-position="fixed" data-add-back-btn="false">
+                    <h1>My Deals</h1>
+            </div>
+            <!-- /header -->
+            <div data-role="content" data-theme="a" align="center">
+            </div>
+
+            <!-- /content -->
+            <div data-role="footer" data-position="fixed" data-id="f1">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#search" data-icon="search">Search</a>
+                        </li>
+                        <li><a href="#myDeals" data-icon="star">My Deals</a>
+                        </li>
+                        <li><a href="#accounts" data-icon="gear">Account</a>
+                        </li>
+                        <li><a href="#more" data-icon="info">More</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /navbar -->
+            </div>
+            <!-- /footer -->
+
         </div>
     </div>    
         
